@@ -1,0 +1,5 @@
+vma:
+  freemarker:
+    # 是否开启js/css压缩合并
+    minify:
+      enable: true

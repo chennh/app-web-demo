@@ -1,0 +1,23 @@
+server:
+  port: 18081
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  application:
+    name: app-web-demo
+logging:
+  level:
+    root: info
+vma:
+  web:
+    mvc:
+      interceptor:
+        login:
+          # 登录页地址
+          view-url: /web/login
+        router:
+          # 404时重定向地址
+          not-found-view-url: /web/frame
+  app:
+    # 接口地址
+    api: http://127.0.0.1:8081/api
